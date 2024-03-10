@@ -33,4 +33,5 @@ function App() {
   );
 }
 
+export {Header};
 export default App;
