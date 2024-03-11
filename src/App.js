@@ -1,19 +1,32 @@
-import logo from './logo.svg';
+import {Component} from 'react';
 import './App.css';
 
 const Header = () => {
   return <h2>Hello</h2>
 }
 
-const Field = () => {
-  const holder = 'Enter here';
-  const styledField = {
-    width: '300px'
+//  const Field = () => {
+//   const holder = 'Enter here';
+//   const styledField = {
+//     width: '300px'
+//   };
+//   return <input 
+//     placeholder={holder} 
+//     type="text" 
+//     style={styledField}/>
+// } 
+
+class Field extends Component {
+  render() {
+    const holder = 'Enter here';
+    const styledField = {
+      width: '300px'
   };
   return <input 
-    placeholder={holder} 
-    type="text" 
-    style={styledField}/>
+  placeholder={holder} 
+  type="text" 
+  style={styledField}/>
+  }
 }
 
 function Btn() {
